@@ -1,3 +1,9 @@
+# Simple Counter using React
+
+A simple counter built using HTML, CSS, JavaScript, Webpack and ReactJs. Once the user opens the application, the counter immediately starts and will continue indefinitely.
+
+See the Live Demo here: https://enriqueesmith.github.io/Simple-Counter-using-React.github.io/ .
+
 # Hello World with React and Cloud 9
 
 Requirements: Make sure you are using node version 8

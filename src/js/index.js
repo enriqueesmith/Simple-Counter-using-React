@@ -9,7 +9,7 @@ import "bootstrap";
 //include your index.scss file into the bundle
 import "../styles/index.scss";
 
-//import your own components
+//This part takes care of the layout for the counter
 function SecondsCounter(props) {
 	return (
 		<div className="container">
@@ -33,13 +33,13 @@ SecondsCounter.propTypes = {
 	digitOne: PropTypes.number
 };
 
+//This part makes sure the numbers are divided by their corresponding place on the counter so that only the remainder is left and the numbers are shown properly
 let counter = 0;
 setInterval(function() {
 	const four = Math.floor(counter / 1000);
 	const three = Math.floor(counter / 100);
 	const two = Math.floor(counter / 10);
 	const one = Math.floor(counter / 1);
-	console.log(four, three, two, one);
 	counter++;
 
 	ReactDOM.render(
